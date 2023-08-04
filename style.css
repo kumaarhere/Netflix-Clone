@@ -148,7 +148,7 @@ body{
 }
 .faq details p{
     font-size: 1.2rem; 
-    transition: 2s ease-out;  
+    transition:2s ease-out;  
 }
 .faq details summary::after{
     content: "+";
@@ -231,6 +231,9 @@ footer div a{
         font-size: 12px;
         cursor: pointer;
     }
+    .nav_btn{
+        margin-top:-8%;
+    }
     
     .faq details summary{
         font-size: 1rem;
@@ -242,7 +245,7 @@ footer div a{
     }
     .faq details p{
         margin-top: 10px;
-        font-size: 10px;
+        font-size: 15px;
     }
     .another p{
         text-align: center;
@@ -299,11 +302,10 @@ footer div a{
         font-size: 12px;
     }
     .logo{
-        width:80px
+        width:120px
     }
     .desc form input{
-        border: 1px solid #737171;
-        
+        border: 1px solid #737171;  
     }
     .hotmail{
       width:70vw;
@@ -312,7 +314,7 @@ footer div a{
     }
     .another form button{
         padding: 4px 8px;
-        margin-left: 30%;   
+        margin-left: 35%;   
     }
     .submit{
         padding: 5px 16px;
