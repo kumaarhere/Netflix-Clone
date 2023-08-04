@@ -1,0 +1,338 @@
+body{
+    background-color: rgb(10, 10, 10);
+}
+.header{
+    width: 100%;
+    height: 98vh;
+    background-image:url(img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.logo{
+    width:150px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 25px;
+
+}
+.nav_btn{
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+}
+.lang{
+    padding:10px;
+    border-radius:10px;
+    background-color: transparent;
+    color:#fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+.lang option{
+    background-color: transparent;
+    color: black;
+}
+.signin{
+    background-color: red;
+    color: #fff;
+    padding:10px 25px;
+    border-radius: 10px;
+    margin-right: 2%;
+    font-size: 18px;
+    cursor: pointer;
+}
+.desc{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.desc h1,h3,p{
+    color:#fff;
+}
+.desc h1{
+    font-size: 35px;
+    font-weight: 900;
+}
+.desc h3{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 30px;
+}
+.desc p{line-height: 30px;
+
+    font-weight: 300;
+    font-size: 18px;
+}
+.hotmail{
+    width:50%;
+    padding: 18px 28px;
+    background-color:transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+}
+.hotmail:valid{
+    border:1px solid green;
+}
+.hotmail::placeholder{
+    text-align: left;
+    color: #bab8b8;
+}
+.submit{
+    margin-left: 2%;
+    padding: 18px 28px;
+    background-color: rgb(217, 15, 15);
+    border-radius: 10px; 
+    color: #fff; 
+    font-size: 18px;
+}
+.info{
+  padding: 50px 12%;
+  font-size:22px;
+  border-top: 4px solid grey;
+}
+.row{
+    display: flex;
+    width:100%;
+    align-items: center;
+    padding:50px 0;
+    flex-wrap: wrap;
+}
+.text-area{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.img-area{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.img-area img{
+    display: block;
+    width:90%;
+    margin: auto;
+    mix-blend-mode:exclusion;
+}
+.text-area h2{
+    font-weight: 800;
+    color: #fff;
+    font-size: 3.3rem;
+}
+.faq{
+    border-top: 6px solid grey;
+    background-color: rgb(16, 16, 16);
+}
+.title{
+    margin-top: 4%;
+    margin-bottom: 4%;
+    text-align: center;
+    color: #fff;
+    font-weight: 900;
+    font-size: 3rem;
+}
+.faq details{
+   text-align: left;
+   padding:10px 18%;
+}
+.faq details summary{
+    color:rgb(244, 220, 189);
+    font-size: 2rem;
+    background-color: rgb(58, 56, 56);
+    border-radius: 16px;
+    padding:4px 32px;
+    list-style: none;
+}
+.faq details p{
+    font-size: 1.2rem; 
+    transition: 2s ease-out;  
+}
+.faq details summary::after{
+    content: "+";
+    position: absolute;
+    right:20%;
+    font-size: 34px;
+}
+.another p{
+    margin-top: 5%;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+.another form{
+    width:50%;
+    margin-left: 33%;
+}
+.another form input{
+   padding:8px 32px;
+}
+.another form button{
+    padding: 12px 24px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.bottom{
+    padding: 50px 16% 10px;
+    border-top: 3px solid rgb(88, 87, 87);
+}
+.bottom h4{
+    color:#fff;
+    margin-bottom: 20px;
+}
+.bottom h4 span{
+  text-decoration: underline;
+  text-decoration-color: #bab8b8;
+  margin-left: 8px;
+}
+footer{
+    display: flex;
+    flex-direction:row;
+    gap:18%;
+}
+footer div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+footer div a{
+    color: #6c6b6b;
+    text-decoration: none;
+}
+.bottom select{
+    margin-top: 20px;
+    padding:3px 16px;
+}
+.bottom p{
+    margin-top: 10px;
+    opacity: 0.7;
+}
+.bottom mark{
+      border-radius: 4px;
+}
+.bottom mark a{
+    color:black;
+    text-decoration: none;
+    opacity: 0.8;
+}
+.bottom mark a:hover{
+    color:rgb(76, 59, 200);
+}
+@media only screen and (max-width: 600px){
+    .bottom{
+        padding: 10px 8%;
+    }
+    .bottom h4{
+       font-size: 13px;
+    }
+    footer div a{
+        font-size: 12px;
+        cursor: pointer;
+    }
+    
+    .faq details summary{
+        font-size: 1rem;
+        border-radius: 8px;
+    }
+    .faq details summary::after{
+        font-size: 20px;
+        margin-top: -2%;
+    }
+    .faq details p{
+        margin-top: 10px;
+        font-size: 10px;
+    }
+    .another p{
+        text-align: center;
+        font-size: 15px;
+    }
+    .another form{
+        width: 80%;
+        margin: auto;
+    }
+    .another input{
+        font-size: 1rem;
+        padding: 5px 32px;
+        margin-left: 6%;
+    }
+    .faq h1{
+        font-size: 1.5rem;
+    }
+    .row:nth-child(2){
+       display: flex;
+       flex-direction: column-reverse;
+       border-top: 3px solid #333;
+    }
+    .row:nth-child(4){
+        display: flex;
+       flex-direction: column-reverse;
+       border-top: 3px solid #333;
+       
+    }
+    .row:nth-child(1){
+        display: flex;
+        flex-direction: column;
+    }
+    .row:nth-child(3){
+        display: flex;
+        flex-direction: column;
+        border-top: 3px solid #333;
+    }
+    .row .text-area h2{
+        font-size: 1.7rem;
+        text-align: center;   
+    }
+    .row .text-area p{
+        text-align: center;
+        font-size: 16px;
+    }
+    .bottom select{
+        font-size: 15px;
+    }
+    .bottom p{
+        margin-left: 2%;
+        font-size: 14px;
+    }
+    .bottom mark{
+        font-size: 12px;
+    }
+    .logo{
+        width:80px
+    }
+    .desc form input{
+        border: 1px solid #737171;
+        
+    }
+    .hotmail{
+      width:70vw;
+      padding: 8px 28px;
+      margin-bottom: 10px;
+    }
+    .another form button{
+        padding: 4px 8px;
+        margin-left: 30%;   
+    }
+    .submit{
+        padding: 5px 16px;
+    }
+    .desc p{
+        font-size: 20px;
+    }
+    .desc h1{
+        font-size: 1.6rem;
+    }
+    .desc h3{
+        font-size: 16px;
+    }
+    .signin{
+        padding:4px 10px;
+    }
+    .lang{
+        margin-right: -4%;
+        padding:4px 6px;
+    }
+
+    
+}
